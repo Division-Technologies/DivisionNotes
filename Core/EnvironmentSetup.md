@@ -15,6 +15,7 @@ winget install Cppcheck.Cppcheck
 
 winget install Microsoft.VisualStudio.BuildTools --override "--wait --passive --config ./buildtools.vsconfig"
 
+# cmake --preset clang-debug && cmake --build --preset clang-debug
 
 ```
 
