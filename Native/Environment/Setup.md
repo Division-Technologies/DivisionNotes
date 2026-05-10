@@ -1,7 +1,7 @@
 # C++開発環境構築
 この記事では、C++の開発環境を構築するための基本的な手順を説明する。
 
-事前に読む：[C++開発環境](./Environment.md)
+事前に読む：[C++開発環境入門](./Environment.md)
 
 
 ## Windows
@@ -16,6 +16,7 @@ winget install Microsoft.VisualStudio.BuildTools --override "--wait --passive --
 
 # cmake --preset clang-debug && cmake --build --preset clang-debug
 # cmake --build --preset clang-debug --target tidy
+# ctest --preset clang-debug
 ```
 
 Windows環境変数の`Path`にLLVMのパスを追加する：`C:\Program Files\LLVM\bin\`
@@ -26,3 +27,6 @@ Windows環境変数の`Path`にLLVMのパスを追加する：`C:\Program Files\
 [Visual Studio Code](https://code.visualstudio.com/) をインストールし、C++開発に必要な拡張機能を追加します。
 - [Clangd (LLVM)](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)
 - [CMake Tools (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
+- [C++ Tools (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+
+DivisionEngine/src/Native/.vscode/extensions.jsonに必要な拡張機能が記載されているので、起動時にインストールを促されるはずです。
