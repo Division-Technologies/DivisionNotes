@@ -13,10 +13,6 @@ winget install Ninja-build.Ninja
 winget install Cppcheck.Cppcheck
 
 winget install Microsoft.VisualStudio.BuildTools --override "--wait --passive --config ./buildtools.vsconfig"
-
-# cmake --preset clang-debug && cmake --build --preset clang-debug
-# cmake --build --preset clang-debug --target tidy
-# ctest --preset clang-debug
 ```
 
 Windows環境変数の`Path`にLLVMのパスを追加する：`C:\Program Files\LLVM\bin\`
